@@ -1,0 +1,13 @@
+version: "1.0"
+applications:
+  - name: all-day-slimming-tea
+    type: static
+    build:
+      commands:
+        - echo "Static HTML site - no build required"
+      publishDirectory: .
+      environment:
+        NODE_ENV: production
+    static:
+      spa: true
+      indexFile: index.html
